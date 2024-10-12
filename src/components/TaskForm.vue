@@ -14,7 +14,7 @@
 	const handleSubmit = () => {
 		if (newTask.value.length > 0) {
 			taskStore.addTask({
-				id: Date.now(),
+				id: String(Date.now()),
 				title: newTask.value,
 				isFav: false,
 			});
